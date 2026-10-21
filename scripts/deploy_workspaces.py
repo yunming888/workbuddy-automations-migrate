@@ -13,7 +13,8 @@
 import os, sys, shutil, argparse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(HERE, "..", "workspaces")
+ROOT = os.path.dirname(HERE)          # 仓库根
+SRC = os.path.join(ROOT, "workspaces")
 HOME = os.path.expanduser("~")
 DEST_ROOT = os.path.join(HOME, "WorkBuddy")
 

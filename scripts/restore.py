@@ -14,7 +14,8 @@
 import os, sys, json, sqlite3, argparse, shutil, time, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-TASKS = os.path.join(HERE, "tasks", "automations.json")
+ROOT = os.path.dirname(HERE)          # 仓库根（tasks/ 与 workspaces/ 在此）
+TASKS = os.path.join(ROOT, "tasks", "automations.json")
 HOME = os.path.expanduser("~")
 WB = os.path.join(HOME, ".workbuddy")
 DB = os.path.join(WB, "workbuddy.db")
