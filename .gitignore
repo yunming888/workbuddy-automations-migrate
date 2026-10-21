@@ -1,0 +1,47 @@
+# 凭据类绝不进仓库
+*cookies*
+*cookie.json*
+*token*
+keyblob
+*.key
+*.pem
+secret
+*.env
+.env
+credentials*
+*session_state*
+apiKey*
+
+# 数据库与缓存（任务定义走 tasks/*.json 导出，不入库）
+*.db
+*.db-wal
+*.db-shm
+*.sqlite*
+
+# 运行时产物
+__pycache__/
+*.pyc
+node_modules/
+venv/
+.venv/
+
+# 媒体与大文件（迁移不需要）
+*.mp4
+*.pma
+*.mp3
+*.log
+*.gz
+*.zip
+!workspaces/**/*.md
+
+# 抓取缓存与历史产物（与任务运行无关）
+workspaces/*/debug/
+workspaces/*/output/
+workspaces/*/covers/
+workspaces/*/review_history/
+workspaces/*/analytics_raw/
+workspaces/*/.workbuddy/
+
+# 系统
+.DS_Store
+Thumbs.db
